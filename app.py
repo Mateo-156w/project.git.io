@@ -9,8 +9,15 @@ import pandas as pd
 import sklearn as sk
 import streamlit as st
 from streamlit_option_menu import option_menu
+
 img = Image.open("Icon.png")
-st.set_page_config(page_title= "Tests de Bipolaridad y Depresión", page_icon=img)
+st.set_page_config(page_title= "Tests de Bipolaridad y Depresión", page_icon=img, layout="wide")
+hide_menu_style = """
+<style>
+#MainMenu {visibility: hidden; }
+</style>
+"""
+st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 with st.sidebar:
     selected = option_menu("Contenidos", ["Home", 'Depresión', "Bipolaridad"], 
