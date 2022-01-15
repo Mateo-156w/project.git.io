@@ -25,7 +25,7 @@ le_criterio10 = data["le_criterio10"]
 def mostrar_pagina_de_Depresión():
   st.title("Test de Depresión")
   st.subheader("Cinco (o más) de los síntomas siguientes han estado presentes durante el mismo período de dos semanas y representan un cambio del funcionamiento previo; al menos uno de los síntomas es estado de ánimo deprimido(Pregunta 1) o pérdida de interés o de placer(Pregunta 2)")
-  st.subheader("Adicionalmente no se debe presentar NINGUN episodio de manía o hipomanía")
+  st.subheader("Adicionalmente no se debe presentar NINGÚN episodio de manía o hipomanía")
   Criterio1 = (
     "Si",
     "No"
