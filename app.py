@@ -7,14 +7,20 @@ import pickle
 import numpy as np
 import pandas as pd
 import sklearn as sk
+import streamlit as st
+from streamlit_option_menu import option_menu
+img = Image.open("Icon.png")
+st.set_page_config(page_title= "Tests de Bipolaridad y Depresión", page_icon=img)
 
-Navigate = st.sidebar.selectbox("Navigate",("Home","Depresión","Bipolaridad"))
+with st.sidebar:
+    selected = option_menu("Contenidos", ["Home", 'Depresión', "Bipolaridad"], 
+        icons=['house', 'diamond-fill','diamond-half'], menu_icon="columns", default_index=0)
+    
 
-Pagina = Navigate
 
-if Pagina == "Depresión":
+if selected == "Depresión":
     mostrar_pagina_de_Depresión()
-if Pagina == "Bipolaridad":
+if selected == "Bipolaridad":
     Mostrar_pagina_de_Bipolaridad()
-if Pagina == "Home":
+if selected == "Home":
     mostrar_pagina_principal()

@@ -67,16 +67,16 @@ def mostrar_pagina_de_Depresión():
     "No"
   )
   
-  Respuesta1 = st.selectbox("¿Últimamente se ha sentido decaído, triste o irritado durante la mayor parte del día siendo notable para su círculo social?", Criterio1,)
-  Respuesta2 = st.selectbox("¿Últimamente ha perdido el interés o placer en actividades casi todo el día siendo notable para su círculo social?", Criterio2,)
-  Respuesta3 = st.selectbox("¿Últimamente ha notado un cambio de peso corporal ya sea de aumento o disminución(esto debe representar una cantidad notable), o ha notado un aumento de apetito casi todos los días?", Criterio3,)
-  Respuesta4 = st.selectbox("Últimamente ha notado insomnio(incapacidad de conciliar el sueño)?", Criterio4,)
-  Respuesta5 = st.selectbox("¿Últimamente usted ha notado(esto también tiene que ser notable por su círculo social) que realiza movimientos sin finalidad alguna o que realiza acciones como hablar o moverse de forma más lenta?", Criterio5,)
-  Respuesta6 = st.selectbox("¿Últimamente se ha sentido sin energía alguna o teniendo fatiga(mucho sueño y falta de energía) casi todo el día?", Criterio6,)
-  Respuesta7 = st.selectbox("¿Últimamente	ha sentido una culpabilidad extrema sintiéndose como un fracaso o inutil(ej  casi todos los días?", Criterio7,)
-  Respuesta8 = st.selectbox("¿Últimamente se ha sentido incapaz de concentrarse o realizar tareas simples , viendo que su capacidad para pensar se ha reducido?", Criterio8,)
-  Respuesta9 = st.selectbox("¿Últimamente ha tenido pensamientos de muerte (ej. Usted cree que la única forma de liberarse del dolor emocional es la muerte o que su círculo social estaría feliz si usted muere) ha intentado suicidarse sin éxito, o en general ha presentado ideas suicidas de forma recurrente?", Criterio9,)
-  Respuesta10 = st.selectbox("Ha presentado episodios de hipomanía o manía", Criterio10,)
+  Respuesta1 = st.radio("¿Últimamente se ha sentido decaído, triste o irritado durante la mayor parte del día siendo notable para su círculo social?", Criterio1,)
+  Respuesta2 = st.radio("¿Últimamente ha perdido el interés o placer en actividades casi todo el día siendo notable para su círculo social?", Criterio2,)
+  Respuesta3 = st.radio("¿Últimamente ha notado un cambio de peso corporal ya sea de aumento o disminución(esto debe representar una cantidad notable), o ha notado un aumento de apetito casi todos los días?", Criterio3,)
+  Respuesta4 = st.radio("Últimamente ha notado insomnio(incapacidad de conciliar el sueño)?", Criterio4,)
+  Respuesta5 = st.radio("¿Últimamente usted ha notado(esto también tiene que ser notable por su círculo social) que realiza movimientos sin finalidad alguna o que realiza acciones como hablar o moverse de forma más lenta?", Criterio5,)
+  Respuesta6 = st.radio("¿Últimamente se ha sentido sin energía alguna o teniendo fatiga(mucho sueño y falta de energía) casi todo el día?", Criterio6,)
+  Respuesta7 = st.radio("¿Últimamente	ha sentido una culpabilidad extrema sintiéndose como un fracaso o inutil(ej  casi todos los días?", Criterio7,)
+  Respuesta8 = st.radio("¿Últimamente se ha sentido incapaz de concentrarse o realizar tareas simples , viendo que su capacidad para pensar se ha reducido?", Criterio8,)
+  Respuesta9 = st.radio("¿Últimamente ha tenido pensamientos de muerte (ej. Usted cree que la única forma de liberarse del dolor emocional es la muerte o que su círculo social estaría feliz si usted muere) ha intentado suicidarse sin éxito, o en general ha presentado ideas suicidas de forma recurrente?", Criterio9,)
+  Respuesta10 = st.radio("Ha presentado episodios de hipomanía o manía", Criterio10,)
   
   
 
