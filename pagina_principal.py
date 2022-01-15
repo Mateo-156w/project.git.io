@@ -9,7 +9,9 @@ def mostrar_pagina_principal():
     
   
     st.title("Depresión o Bipolaridad")
-    st.subheader("Estos tests tienen la finalidad de dar un porcentaje APROXIMADO sobre su probabilidad de tener tanto Depresión como Bipolaridad en base a los criterios del DSMV")  
+    st.subheader("Los resultados de las pruebas realizadas dentro de esta página no diagnostican ninguna de las dos enfermedades") 
+    st.subheader("Su finalidad es dar a conocer al paciente si cumple con algun/ninguno/todos los criterios del DSM V sobre cierta enfermedad") 
+    st.subheader("Y que con esos resultados el evalue si es factible visitar o no un psiquiatra ")
 
      
    

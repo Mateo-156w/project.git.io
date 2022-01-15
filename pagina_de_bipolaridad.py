@@ -22,7 +22,8 @@ le_criterio8 = data["le_criterio8"]
 
 def Mostrar_pagina_de_Bipolaridad():
     st.title("Test de Bipolaridad")
-    st.subheader("Para un diagnóstico de trastorno bipolar I, es necesario que se cumplan los criterios siguientes para un episodio maníaco. Antes o después del episodio maníaco pueden haber existido episodios hipomaníacos o episodios de depresión mayor.")
+    st.subheader("Para un diagnóstico de trastorno bipolar I, es necesario que se cumplan 3 o mas de los criterios siguientes(Preguntas) para un episodio maníaco(Los sintomas son disruptivos o requieren de atencion media urgente).")
+    st.subheader("Para un diagnóstico de trastorno bipolar II, es necesario que se cumplan 3 o mas de los criterios siguientes(Preguntas) para un episodio hipomaníaco(Los sintomas no son disruptivos o no requieren de atencion medica urgente)")
     
     Criterio1 = (
         "Si",

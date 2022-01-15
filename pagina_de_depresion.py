@@ -22,10 +22,10 @@ le_criterio8 = data["le_criterio8"]
 le_criterio9 = data["le_criterio9"]
 le_criterio10 = data["le_criterio10"]
 
-def mostrar_pagina_de_Depresion():
+def mostrar_pagina_de_Depresión():
   st.title("Test de Depresión")
-  st.subheader("Cinco (o más) de los síntomas siguientes han estado presentes durante el mismo período de dos semanas y representan un cambio del funcionamiento previo; al menos uno de los síntomas es estado de ánimo deprimido o pérdida de interés o de placer")
- 
+  st.subheader("Cinco (o más) de los síntomas siguientes han estado presentes durante el mismo período de dos semanas y representan un cambio del funcionamiento previo; al menos uno de los síntomas es estado de ánimo deprimido(Pregunta 1) o pérdida de interés o de placer(Pregunta 2)")
+  st.subheader("Adicionalmente no se debe presentar NINGUN episodio de manía o hipomanía")
   Criterio1 = (
     "Si",
     "No"
@@ -76,7 +76,7 @@ def mostrar_pagina_de_Depresion():
   Respuesta7 = st.selectbox("¿Últimamente	ha sentido una culpabilidad extrema sintiéndose como un fracaso o inutil(ej  casi todos los días?", Criterio7,)
   Respuesta8 = st.selectbox("¿Últimamente se ha sentido incapaz de concentrarse o realizar tareas simples , viendo que su capacidad para pensar se ha reducido?", Criterio8,)
   Respuesta9 = st.selectbox("¿Últimamente ha tenido pensamientos de muerte (ej. Usted cree que la única forma de liberarse del dolor emocional es la muerte o que su círculo social estaría feliz si usted muere) ha intentado suicidarse sin éxito, o en general ha presentado ideas suicidas de forma recurrente?", Criterio9,)
-  Respuesta10 = st.selectbox("NO ha presentado episodios de hipomania o mania", Criterio10,)
+  Respuesta10 = st.selectbox("Ha presentado episodios de hipomanía o manía", Criterio10,)
   
   
 
