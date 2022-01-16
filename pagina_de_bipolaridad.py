@@ -92,6 +92,27 @@ def Mostrar_pagina_de_Bipolaridad():
         x [:, 7] = le_criterio1.transform(x[:,7])
         x = x.astype(float)
         Probabilidad = model.predict(x)
-        st.subheader(f"Usted tiene aproximadamente un {Probabilidad[0]} de padecer Bipolaridad Tipo {bipolaridad[0]}")
-        
-
+        Resultado = ""
+        if Probabilidad == "0%":
+            Resultado = "Nula"
+        if Probabilidad == "50%":
+            Resultado = "Baja"
+        if Probabilidad == "55%":
+            Resultado = "Baja"
+        if Probabilidad == "60%":
+            Resultado = "Baja"
+        if Probabilidad == "65%":
+            Resultado = "Baja"
+        if Probabilidad == "70%":
+            Resultado = "Intermedia Alta"
+        if Probabilidad == "80%":
+            Resultado = "Intermedia Alta"
+        if Probabilidad == "85%":
+            Resultado = "Intermedia Alta"
+        if Probabilidad == "90%":
+            Resultado = "Alta"
+        if Probabilidad == "95%":
+            Resultado = "Alta"
+        if Probabilidad == "100%":
+            Resultado = "Alta"
+        st.subheader(f"Usted tiene una probabilidad {Resultado} de padecer Bipolaridad Tipo {bipolaridad[0]}")

@@ -104,4 +104,17 @@ def mostrar_pagina_de_Depresión():
 
     x = x.astype(float)
     Probabilidad = model.predict(x)
-    st.subheader(f"Usted tiene aproximadamente un {Probabilidad[0]} de padecer Depresión")
+    Resultado = ""
+    if Probabilidad == "0%":
+      Resultado = "Nula"
+    if Probabilidad == "60%":
+      Resultado = "Baja"
+    if Probabilidad == "70%":
+      Resultado = "Intermedia Baja"
+    if Probabilidad == "80%":
+      Resultado = "Intermedia Alta"
+    if Probabilidad == "90%":
+      Resultado = "Alta"
+    if Probabilidad == "100%":
+      Resultado = "Alta"
+    st.subheader(f"Usted tiene una probabilidad {Resultado} de padecer Depresión")
