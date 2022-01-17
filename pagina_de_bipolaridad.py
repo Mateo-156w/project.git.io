@@ -22,7 +22,7 @@ le_criterio8 = data["le_criterio8"]
 
 def Mostrar_pagina_de_Bipolaridad():
     st.title("Test de Bipolaridad")
-    st.subheader("Para un diagnóstico de trastorno bipolar I, es necesario que se cumplan 3 o mas de los criterios siguientes(Preguntas) para un episodio maníaco(Los sintomas son disruptivos o requieren de atencion media urgente).")
+    st.subheader("Para un diagnóstico de trastorno bipolar I, es necesario que se cumplan 3 o mas de los criterios siguientes(Preguntas) para un episodio maníaco(Los sintomas son disruptivos o requieren de atencion media urgente)")
     st.subheader("Para un diagnóstico de trastorno bipolar II, es necesario que se cumplan 3 o mas de los criterios siguientes(Preguntas) para un episodio hipomaníaco(Los sintomas no son disruptivos o no requieren de atencion medica urgente)")
     
     Criterio1 = (
@@ -63,14 +63,14 @@ def Mostrar_pagina_de_Bipolaridad():
     )
     
     Respuesta1 = st.radio("¿Últimamente ha notado que su autoestima se elevó (su seguridad se elevó y sus pensamientos sobre sí mismo son de grandeza)?", Criterio1,)
-    Respuesta2 = st.radio("¿Últimamente ha notado una disminución de su necesidad de dormir(ej se siente bien tan solo durmiendo 3 horas)?", Criterio2,)
+    Respuesta2 = st.radio("¿Últimamente ha notado una disminución de su necesidad de dormir(ej. se siente bien tan solo durmiendo 3 horas)?", Criterio2,)
     Respuesta3 = st.radio("¿Últimamente le han dicho que está hablando más de lo normal y que presiona para mantener una conversación?", Criterio3,)
-    Respuesta4 = st.radio("¿Últimamente ha notado que sus ideas aparecen de forma fugaz teniendo cambios bruscos de estas(cambia de tema de forma repentina)? Estos cambios ocurren antes de que una idea haya sido finalizada", Criterio4,)
+    Respuesta4 = st.radio("¿Últimamente ha notado que sus ideas aparecen de forma fugaz teniendo cambios bruscos de estas(cambia de tema de forma repentina)? Estos cambios ocurren antes de que una idea haya sido finalizada.", Criterio4,)
     Respuesta5 = st.radio("¿Últimamente ha notado que su atención cambia de forma repentina con cosas irrelevantes y que no puede mantener su atención de forma sencilla?(Esto tambien tiene o tuvo que ser notado por otras personas)", Criterio5,)
     Respuesta6 = st.radio("¿Últimamente ha notado su actividad dirigida a un objetivo ej.estudiar/entrenar/jugar más de lo normal) o se ha sentido inquieto o realizando movimientos que no tienen propósito como frotarse la piel o tirar de su ropa?", Criterio6,)
     Respuesta7 = st.radio("¿Últimamente ha realizado actividades con un riesgo alto de forma desenfrenada (ej. Ha gastado mucho dinero en compras de forma compulsiva)?", Criterio7,)
     Respuesta8 = st.radio("¿Ha presentado un episodio de depresión mayor?", Criterio8,)
-    TipodeBi = st.radio("Los síntomas presentados fueron tan disruptivos que afectaron a su espacio de estudio/círculo social", Tipo)
+    TipodeBi = st.radio("Los síntomas presentados fueron tan disruptivos que afectaron a su espacio de estudio/círculo social.", Tipo)
     bipolaridad = TipodeBi
 
     if bipolaridad == "Si":

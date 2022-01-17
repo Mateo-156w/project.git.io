@@ -73,10 +73,10 @@ def mostrar_pagina_de_Depresión():
   Respuesta4 = st.radio("Últimamente ha notado insomnio(incapacidad de conciliar el sueño)?", Criterio4,)
   Respuesta5 = st.radio("¿Últimamente usted ha notado(esto también tiene que ser notable por su círculo social) que realiza movimientos sin finalidad alguna o que realiza acciones como hablar o moverse de forma más lenta?", Criterio5,)
   Respuesta6 = st.radio("¿Últimamente se ha sentido sin energía alguna o teniendo fatiga(mucho sueño y falta de energía) casi todo el día?", Criterio6,)
-  Respuesta7 = st.radio("¿Últimamente	ha sentido una culpabilidad extrema sintiéndose como un fracaso o inutil(ej  casi todos los días?", Criterio7,)
+  Respuesta7 = st.radio("¿Últimamente	ha sentido una culpabilidad extrema sintiéndose como un fracaso o inutil(ej.  casi todos los días?", Criterio7,)
   Respuesta8 = st.radio("¿Últimamente se ha sentido incapaz de concentrarse o realizar tareas simples , viendo que su capacidad para pensar se ha reducido?", Criterio8,)
   Respuesta9 = st.radio("¿Últimamente ha tenido pensamientos de muerte (ej. Usted cree que la única forma de liberarse del dolor emocional es la muerte o que su círculo social estaría feliz si usted muere) ha intentado suicidarse sin éxito, o en general ha presentado ideas suicidas de forma recurrente?", Criterio9,)
-  Respuesta10 = st.radio("Ha presentado episodios de hipomanía o manía", Criterio10,)
+  Respuesta10 = st.radio("¿Ha presentado episodios de hipomanía o manía?", Criterio10,)
   
   
 
